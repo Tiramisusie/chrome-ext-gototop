@@ -1,0 +1,17 @@
+{
+    "name": "goToTop",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "返回顶部",
+    "permissions": [
+        "http://*/", "https://*/"
+    ],
+    "browser_action":{
+      "default_icon": "top.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/", "https://*/", "http://*/*", "https://*/*"],
+        "js": ["js/top.js"]
+    }]
+}
