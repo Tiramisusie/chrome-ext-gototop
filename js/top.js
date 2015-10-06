@@ -5,12 +5,12 @@ var scrolling = function(e){
 
     timer = setInterval(function () {
         if( document.body.scrollTop > 0 ){
-            document.body.scrollTop -= 100;
+            document.body.scrollTop -= 200;
         } else {
             document.body.scrollTop = 0;
             clearInterval( timer );
         }
-    }, 30 );
+    }, 20 );
 };
 
 var img = document.createElement('img');
